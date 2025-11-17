@@ -24,7 +24,7 @@ namespace spr421_spotify_clone.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateAsync([FromBody] CreateGenreDto dto)
         {
-            var response = await _genreService.CreateAsync(dto);
+        var response = await _genreService.CreateAsync(dto);
             return this.ToActionResult(response);
         }
 
