@@ -78,7 +78,7 @@ const RegisterPage = () => {
         return;
       }
       
-      const response = await axios.post("https://localhost:7166/api/auth/register", values);
+      const response = await axios.post("https://localhost:5001/api/auth/register", values);
       const {data} = response;
       console.log(data);
      

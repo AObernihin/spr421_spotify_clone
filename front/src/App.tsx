@@ -6,6 +6,7 @@ import DefaultLayout from './components/layouts/DefaultLayout'
 import MainPage from './pages/mainPages/MainPage'
 import LoginPage from './pages/auth/LoginPage'
 import RegistryPage from './pages/auth/RegistryPage'
+import AddTrackPage from './pages/dev/AddTrack'
 
 function App() {
   
@@ -17,6 +18,7 @@ function App() {
           <Route index element={<MainPage/>} />
           <Route path="login" element={<LoginPage/>} />
           <Route path="signup" element={<RegistryPage/>} />
+          <Route path="Track" element={<AddTrackPage/>} />
         </Route>
       </Routes>
     </>

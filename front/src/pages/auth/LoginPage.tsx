@@ -83,7 +83,7 @@ const LoginPage = () => {
   const handleSubmit = async(values : Login) => {
     try {
       
-      const response = await axios.post("https://localhost:7166/api/auth/login", values);
+      const response = await axios.post("https://localhost:5001/api/auth/login", values);
       const {data} = response;
       const token = data.payload;
       localStorage.setItem('token', token);                                         
